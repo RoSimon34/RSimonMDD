@@ -1,0 +1,38 @@
+.container-area{
+	width:800px;
+	height:260px;
+	position:relative;
+	background:#fff;
+	border:1px solid #D8DFEA;
+	float:left;
+}
+.container-area_p{
+	padding:15px 20px;
+	display:block;
+	line-height:20px;
+	background-color: #fff;
+	border-top:1px solid #d4dae8;
+}
+.container-area a:first-child{
+    border-top:none;
+}
+.container-area a:last-child{
+    border-bottom:none;
+}
+.container-area a:hover{
+   background:#ECEFF5;
+   border-bottom-color:#ECEFF5;
+}
+.container-area a h3{ 
+    font-size:14px;
+    font-weight:bold;
+    padding:2px 0 5px 0;
+	text-transform:uppercase;
+}
+.container-area a img{
+    float:left;
+    margin:5px 10px 0px 0px;
+    padding:3px;
+    background:#fff;
+    border:3px solid #D8DFEA;
+}

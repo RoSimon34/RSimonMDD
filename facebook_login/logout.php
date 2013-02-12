@@ -1,0 +1,10 @@
+<?php
+session_start();
+unset($_SESSION['user']);
+unset($_SESSION['id']);
+unset($_SESSION['fb_122327831281689_code']);
+unset($_SESSION['fb_122327831281689_access_token']);
+unset($_SESSION['fb_122327831281689_user_id']);
+header("Location:index.php");
+exit;
+?>
