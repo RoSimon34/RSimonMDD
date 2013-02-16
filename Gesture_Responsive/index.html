@@ -1,162 +1,111 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html> 
+<head> 
+	<title>Gesture</title> 
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<!-- <link rel="stylesheet" href="css/themes/gesture_theme.css" /> -->
+	<!-- <link rel="stylesheet" href="themes/my-custom-theme.min.css" /> -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8" />
+<body> 
+	<div data-role="page" class="wrapper">
+	
+		<!--
+<div data-role="header">
+			<h1><img src="images/gesture_logo.png"/></h1>
+		</div>
+--><!-- end header div -->
 
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
-
-  <title>Gesture.com</title>
-  
-  <!-- Included CSS Files (Uncompressed) -->
-  <!--
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  -->
-  
-  <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="stylesheets/foundation.min.css">
-  <link rel="stylesheet" href="stylesheets/app.css">
-
-  <script src="javascripts/modernizr.foundation.js"></script>
-</head>
-<body>
-
-  <div class="row">
-    <div class="twelve columns">
-      <h2>Gesture Art App.</h2>
-      <hr />
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Image Section</h3>
-      <div id="featured">
-        <img src="holder.js/1200x250/text:Slide_1" alt="slide image">
-        <img src="holder.js/1200x250/text:Slide_2" alt="slide image">
-        <img src="holder.js/1200x250/text:Slide_3" alt="slide image">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="eight columns">
-      <h3>The Grid Section</h3>
-
-      <!-- Grid Example -->
-      <div class="row">
-        <div class="twelve columns">
-          <div class="panel">
-            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="six columns">
-          <div class="panel">
-            <p>Six columns</p>
-          </div>
-        </div>
-        <div class="six columns">
-          <div class="panel">
-            <p>Six columns</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-      </div>
-      
-      
-      <h3>Tabs Experiment</h3>
-      <dl class="tabs">
-        <dd class="active"><a href="#simple1">Simple Tab 1</a></dd>
-        <dd><a href="#simple2">Simple Tab 2</a></dd>
-        <dd><a href="#simple3">Simple Tab 3</a></dd>
-      </dl>
-
-      <ul class="tabs-content">
-        <li class="active" id="simple1Tab">This is simple tab 1's content. Pretty neat, huh?</li>
-        <li id="simple2Tab">This is simple tab 2's content. Now you see it!</li>
-        <li id="simple3Tab">This is simple tab 3's content. It's, you know...okay.</li>
-      </ul>
-      
-      
-      
-      <h3>Button Examples</h3>
-
-      <div class="row">
-        <div class="six columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
-        </div>
-        <div class="six columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
-      
-    </div>
-
-  </div>
-  
-  
-  
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Reveal</h3>
-      <p><a href="#" data-reveal-id="exampleModal" class="button">Example modal</a></p>
-    </div>
-  </div>
-  
-  <div id="exampleModal" class="reveal-modal">
-    <h2>This is a modal.</h2>
-    <p>
-      Reveal makes these very easy to summon and dismiss. The close button is simple an anchor with a unicode 
-      character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will 
-      also dismiss it.
-    </p>
-    <a class="close-reveal-modal">×</a>
-  </div>
-  
-  
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
-  <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
-  -->
-  
-  <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/foundation.min.js"></script>
-  
-  <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
-
-  
-    <script>
-    $(window).load(function(){
-      $("#featured").orbit();
-    });
-    </script> 
-  
+		<header>
+				<h1><img src="images/dt_logo.png"/></h1>
+				<!-- <h1 class="logo"><a href="index.html">Gesture</a></h1> -->
+		</header>
+			
+		<div data-role="content" class="main">	
+			
+			<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search Artist Name or Project">
+				<li>
+					<a href="detail.html">
+						<img src="images/art1.png" />
+						<h2>NATIVE AMERICAN</h2>
+						<p>By: Killer Fox</p>
+						<div class="vote_section">
+							<img src="images/t_up_listP.png" />
+							<h2>300</h2>
+							
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="detail.html">
+						<img src="images/art2.png" />
+						<h2>ASIAN INFLUENCE</h2>
+						<p>By: Bruce Chin</p>
+						<div class="vote_section">
+							<img src="images/t_up_listP.png" />
+							<h2>280</h2>
+							
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="detail.html">
+						<img src="images/art3.png" />
+						<h2>WE'RE AT WAR</h2>
+						<p>By: Romaine Simon</p>
+						<div class="vote_section">
+							<img src="images/t_up_listP.png" />
+							<h2>250</h2>
+							
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="detail.html">
+						<img src="images/art4.png" />
+						<h2>CUBIST FIGURE</h2>
+						<p>By: Jack The Ripper</p>
+						<div class="vote_section">
+							<img src="images/t_up_listP.png" />
+							<h2>200</h2>
+							
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="detail.html">
+						<img src="images/art5.png" />
+						<h2>ADVENTURE TIME</h2>
+						<p>By: 2X Simon</p>
+						<div class="vote_section">
+							<img src="images/t_up_listP.png" />
+							<h2>190</h2>
+							
+						</div>
+					</a>
+				</li>
+				
+			</ul>	
+		</div><!-- end content div -->
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-mini="true">Sign Up For Free</a></li>
+					<li><a href="#" data-mini="true">Login</a></li>
+				</ul>
+			</div><!-- Nav bar -->
+		</div><!-- end footer div -->
+	
+	</div><!-- end of page -->
 </body>
 </html>
