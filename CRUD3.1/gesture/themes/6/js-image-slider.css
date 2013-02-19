@@ -1,0 +1,70 @@
+/* http://www.menucool.com */
+
+#sliderFrame {
+	
+	height: 352px;
+	position:relative;
+	width:980px;
+	margin: 0 auto;
+
+}
+   
+
+#slider {
+
+    width:980px;
+    height:352px;/* Make it the same size as your images */
+    background:#fff url(loading.gif) no-repeat 50% 50%;
+    /* position:relative; */
+    float: left;
+    margin:0 auto; /*this makes the image slider center-aligned. Remove this line if you want to align the whole slider to the left side*/
+    /* box-shadow: 0px 1px 5px #999999; */
+}
+
+#slider img {
+
+	/* position:absolute; */
+	border:none;
+	display:none;
+	clear: both;
+}
+
+
+#cta_content {
+	
+	position: absolute;
+	right: 0;
+	width: 490px;
+	height: 302px;
+	background: #D1AD53;
+	float: right;
+	clear: right;
+	color: #fff;
+	font-family: Helvetica, serif;
+}
+
+#cta_content h2 {
+	
+	font-size: 24px;
+	margin: 50px 0 10px 30px;
+	
+}
+
+#cta_content h1 {
+	
+	font-family: Times, sans-serif;
+	font-size: 40px;
+	margin: 10px 0 10px 30px;
+	
+}
+
+#cta_content p {
+	
+	font-size: 14px;
+	margin: 20px 0 10px 30px;
+	width: 400px;
+	border-top: thin solid #fff;
+	padding-top: 15px;
+	
+}
+
