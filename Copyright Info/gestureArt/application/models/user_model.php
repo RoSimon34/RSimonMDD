@@ -5,6 +5,7 @@ class User_model extends CI_Model {
     {
         parent::__construct();
     }
+    //the login function is looking or rather checking for the email and password submitted by the user it also gets the user info from the database
 	function login($email,$password)
     {
 		$this->db->where("email",$email);
@@ -12,7 +13,7 @@ class User_model extends CI_Model {
             
         $query=$this->db->get("user");
         if($query->num_rows()>0)
-        {
+        {	//the result with be set to the variable $row which is then calld or used
          	foreach($query->result() as $rows)
             {
             	//add all data to session
@@ -28,6 +29,7 @@ class User_model extends CI_Model {
 		}
 		return false;
     }
+    //the add_user function will add the user information submitted into the form to the databse into the users table. the user_name, email, and password will be added.
 	public function add_user()
 	{
 		$data=array(

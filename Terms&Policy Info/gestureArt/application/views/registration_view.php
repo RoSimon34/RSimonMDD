@@ -22,21 +22,25 @@
 
 <!-- ========================================================== Home Page Section ================================================ -->
 	
+	<!-- Bellow is the Home_view Page which in contained within a container div with a data-role of page, and a ID of Home_view which is whats needed to call help page-->
 	<div data-role="page" id="home" class="wrapper">
     	
-		<header>
+		<header><!-- header contains the logo which is within a image tag-->
 			<!-- <h1><img src="images/dt_logo.png"/></h1> -->
 			
 <?php $this->load->helper('html'); ?>
 			<h1 class="logo_img"><?php $img = array('src'=>'images/logo_small.png','class'=>'logo'); echo img($img); ?></h1>
 		</header>
 		
+		<!-- below is a header that has a JQery data role of header which will take on there design theme, within the header is a header title, and a button which will send the user back to the home page -->
 		<div data-role="header">
 			<h1>Home</h1>
 			<a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="a" data-inline="true">Bars</a>
 			<!-- <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext" class="ui-btn-left">menu</a> -->
 		</div><!-- end header div-->
-			
+		
+		
+		<!-- Below is the main content div of this section / page. it houses the content i want to present to the user. -->
 		<div data-role="content" class="main">	
 				<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search Artist Name or Project">
 					<li>
@@ -76,6 +80,7 @@
 				</ul>
 		</div><!-- end content div -->
 		
+		<!-- blelow is a footer div which contains a list of buttons which is linked to the specific page it is needed to go to -->
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
@@ -85,12 +90,14 @@
 			</div><!-- Nav bar -->
 		</div><!-- end footer div -->
 		
+		<!-- blelow is a hiden panel div which contains a list of styled links which is then directed to other pages. when the user clicks on the panel icon the hidden panel will then show itself to the user presenting the hidden content -->
 		<div data-role="panel" id="mypanel" data-position-fixed="true" data-display="push">
 			<ul data-role="listview" data-theme="c" class="nav-search">
 	            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
 	            <li data-theme="a"><a href="#contact_view" data-transition="pop">Contact / Support</a></li>
 	            <li data-theme="a"><a href="#terms_view" data-transition="pop">Terms and Policies</a></li>
 	            <li data-theme="a"><a href="#copyright_view" data-transition="pop">Copyright Information</a></li>
+	            <li data-theme="a"><a href="#help_view" data-transition="pop">Help / FAQ</a></li>
 	        </ul>
     	</div><!-- /panel -->
 	
@@ -98,8 +105,9 @@
 	
 <!-- ==================================================== Login page section ============================================= -->
 
+<!-- Bellow is the login_view Page which in contained within a container div with a data-role of page, and a ID of login_view which is whats needed to call help page-->
 <div data-role="page" id="login_view" class="wrapper" data-theme="b">
-		<header>
+		<header><!-- header contains the logo which is within a image tag-->
 			<h1><img src="images/logo_small.png"/></h1>
 			<!--
 <?php $this->load->helper('html'); ?>
@@ -107,12 +115,15 @@
 -->
 		</header>
 		
+		<!-- below is a header that has a JQery data role of header which will take on there design theme, within the header is a header title, and a button which will send the user back to the home page -->
 		<div data-role="header">
 			<h1>Login Below</h1>
 			<a href="#home" data-role="button" data-icon="home" class="ui-btn-left" data-transition="flow">Home</a>
 		</div><!-- end header div-->
-			
-		<div data-role="content" id="main_detailP">	
+		
+		<!-- Below is the main content div of this section / page. it houses the Login Form i want to present to the user. -->
+		<div data-role="content" id="main_detailP">
+			<!-- The line beflow is using php to echo a form open tag and it is calling the users controller and the login function within the controller -->
 			<?php echo form_open("user/login"); ?>
 			    <label for="email">Email:</label>
 		    	<input type="text" id="email" name="email" value="" />
@@ -123,23 +134,18 @@
 				
 		</div><!-- end content div -->
 		
+		<!-- blelow is a footer div which contains nothing at the moment-->
 		<div data-role="footer" data-position="fixed">
-			<!--
-<div data-role="navbar">
-				<ul>
-					<li><a href="#" data-mini="true">Thumbs up</a></li>
-					<li><a href="#" data-mini="true">Comments</a></li>
-				</ul>
-			</div>
---><!-- Nav bar -->
+			
 		</div><!-- end footer div -->
 </div><!-- end of page -->
 
 
 <!-- ==================================================== Register page section ============================================= -->
 
+<!-- Bellow is the register_view Page which in contained within a container div with a data-role of page, and a ID of register_view which is whats needed to call help page-->
 <div data-role="page" id="register_view" class="wrapper" data-theme="b">
-		<header>
+		<header><!-- header contains the logo which is within a image tag-->
 			<h1><img src="images/logo_small.png"/></h1>
 			<!--
 <?php $this->load->helper('html'); ?>
@@ -147,13 +153,17 @@
 -->
 		</header>
 		
+		<!-- below is a header that has a JQery data role of header which will take on there design theme, within the header is a header title, and a button which will send the user back to the home page -->
 		<div data-role="header">
 			<h1>Sign Up Below</h1>
 			<a href="#home" data-role="button" data-icon="home" class="ui-btn-left" data-transition="flow">Home</a>
 		</div><!-- end header div-->
-			
+		
+		<!-- Below is the main content div of this section / page. it houses all the Registration Form i want to present to the user. -->
 		<div data-role="content">	
+			<!-- The line below will call the class of error that i have set within the controller for the user registration which will check for any errors -->
 			<?php echo validation_errors('<p class="error">'); ?>
+			<!-- The line beflow is using php to echo a form open tag and it is calling the users controller and the registration function within the controller -->
 			<?php echo form_open("user/registration"); ?>
 				<p>
 					<label for="user_name">User Name:</label>
@@ -177,6 +187,7 @@
 			<?php echo form_close(); ?>
 		</div><!-- end content div -->
 		
+		<!-- blelow is a footer div which contains nothing at the moment-->
 		<div data-role="footer" data-position="fixed">
 		</div><!-- end footer div -->
 </div><!-- end of page -->
@@ -184,8 +195,9 @@
 
 <!-- ==================================================== Contact Info page section ============================================= -->
 
+<!-- Bellow is the contact_view Page which in contained within a container div with a data-role of page, and a ID of contact_view which is whats needed to call help page-->
 <div data-role="page" id="copyright_view" class="wrapper" data-theme="b">
-		<header>
+		<header><!-- header contains the logo which is within a image tag-->
 			<h1><img src="images/logo_small.png"/></h1>
 			<!--
 <?php $this->load->helper('html'); ?>
@@ -193,11 +205,13 @@
 -->
 		</header>
 		
+		<!-- below is a header that has a JQery data role of header which will take on there design theme, within the header is a header title, and a button which will send the user back to the home page -->
 		<div data-role="header">
 			<h1>Contact information</h1>
 			<a href="#home" data-role="button" data-icon="home" class="ui-btn-left" data-transition="flow">Home</a>
 		</div><!-- end header div-->
-			
+		
+		<!-- Below is the main content div of this section / page. it houses all the content i want to present to the user. -->
 		<div data-role="content">	
 			<h2>Copyright Information</h2>
 			<p>Gesture will not collect or share personally identifiable information such as your name, email, or personal artwork without your knowledage and permission. We only collect Personal Information that you voluntarily submit when you create a Gesture Profile and upload / create your projects.</p>
@@ -206,14 +220,16 @@
 			
 		</div><!-- end content div -->
 		
+		<!-- blelow is a footer div which contains nothing at the moment-->
 		<div data-role="footer" data-position="fixed">
 		</div><!-- end footer div -->
 </div><!-- end of page -->
 
 <!-- ==================================================== Terms of Use page section ============================================= -->
 
+<!-- Bellow is the terms_view Page which in contained within a container div with a data-role of page, and a ID of terms_view which is whats needed to call help page-->
 <div data-role="page" id="terms_view" class="wrapper" data-theme="b">
-		<header>
+		<header><!-- header contains the logo which is within a image tag-->
 			<h1><img src="images/logo_small.png"/></h1>
 			<!--
 <?php $this->load->helper('html'); ?>
@@ -221,11 +237,14 @@
 -->
 		</header>
 		
+		<!-- below is a header that has a JQery data role of header which will take on there design theme, within the header is a header title, and a button which will send the user back to the home page -->
 		<div data-role="header">
 			<h1>Terms and Policies</h1>
 			<a href="#home" data-role="button" data-icon="home" class="ui-btn-left" data-transition="flow">Home</a>
 		</div><!-- end header div-->
 			
+			
+		<!-- Below is the main content div of this section / page. it houses all the content i want to present to the user. -->
 		<div data-role="content">	
 			
 			<h2>
@@ -364,23 +383,17 @@
 			
 		</div><!-- end content div -->
 		
+		<!-- blelow is a footer div which contains nothing at the moment-->
 		<div data-role="footer" data-position="fixed">
-			<!--
-<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-role="button" data-icon="home" class="ui-btn-left" data-transition="flow">Home</a></li>
-					<li><a href="#login_view" data-mini="true" data-theme="d" data-transition="flip">Login</a></li>
-				</ul>
-			</div>
---><!-- Nav bar -->
 			
 		</div><!-- end footer div -->
 </div><!-- end of page -->
 
 <!-- ==================================================== Copyright Info page section ============================================= -->
 
+<!-- Bellow is the copyright_view Page which in contained within a container div with a data-role of page, and a ID of copyright_view which is whats needed to call help page-->
 <div data-role="page" id="copyright_view" class="wrapper" data-theme="b">
-		<header>
+		<header><!-- header contains the logo which is within a image tag-->
 			<h1><img src="images/logo_small.png"/></h1>
 			<!--
 <?php $this->load->helper('html'); ?>
@@ -388,11 +401,13 @@
 -->
 		</header>
 		
+		<!-- below is a header that has a JQery data role of header which will take on there design theme, within the header is a header title, and a button which will send the user back to the home page -->
 		<div data-role="header">
 			<h1>Legal</h1>
 			<a href="#home" data-role="button" data-icon="home" class="ui-btn-left" data-transition="flow">Home</a>
 		</div><!-- end header div-->
 			
+		<!-- Below is the main content div of this section / page. it houses all the content i want to present to the user. -->
 		<div data-role="content">	
 			<h2>Copyright Information</h2>
 			<p>Gesture does not send Spam or sell email addresses.. This Privacy Policy describes how we treat the information we collect when you visit our web sites and/or received any emails from Gesture.</p>
@@ -410,14 +425,16 @@
 			
 		</div><!-- end content div -->
 		
+		<!-- blelow is a footer div which contains nothing at the moment-->
 		<div data-role="footer" data-position="fixed">
 		</div><!-- end footer div -->
 </div><!-- end of page -->
 
 <!-- ==================================================== Contact Info page section ============================================= -->
 
+<!-- Bellow is the Contact_view Page which in contained within a container div with a data-role of page, and a ID of contact_view which is whats needed to call help page-->
 <div data-role="page" id="contact_view" class="wrapper" data-theme="b">
-		<header>
+		<header><!-- header contains the logo which is within a image tag-->
 			<h1><img src="images/logo_small.png"/></h1>
 			<!--
 <?php $this->load->helper('html'); ?>
@@ -425,11 +442,13 @@
 -->
 		</header>
 		
+		<!-- below is a header that has a JQery data role of header which will take on there design theme, within the header is a header title, and a button which will send the user back to the home page -->
 		<div data-role="header">
 			<h1>Contact / Support</h1>
 			<a href="#home" data-role="button" data-icon="home" class="ui-btn-left" data-transition="flow">Home</a>
 		</div><!-- end header div-->
 			
+		<!-- Below is the main content div of this section / page. it houses all the content i want to present to the user. -->
 		<div data-role="content">	
 			<h2>Contact Information</h2>
 			
@@ -449,6 +468,42 @@
 			
 		</div><!-- end content div -->
 		
+		<!-- blelow is a footer div which contains nothing at the moment-->
+		<div data-role="footer" data-position="fixed">
+		</div><!-- end footer div -->
+</div><!-- end of page -->
+
+<!-- ==================================================== Help / FAQ Info page section ============================================= -->
+
+<!-- Bellow is the help_view Page which in contained within a container div with a data-role of page, and a ID of help_view which is whats needed to call help page-->
+<div data-role="page" id="help_view" class="wrapper" data-theme="b">
+		<header><!-- header contains the logo which is within a image tag-->
+			<h1><img src="images/logo_small.png"/></h1>
+			<!--
+<?php $this->load->helper('html'); ?>
+			<?php echo img('/images/logo_small.png'); ?>
+-->
+		</header>
+		
+		<!-- below is a header that has a JQery data role of header which will take on there design theme, within the header is a header title, and a button which will send the user back to the home page -->
+		<div data-role="header">
+			<h1>FAQ</h1>
+			<a href="#home" data-role="button" data-icon="home" class="ui-btn-left" data-transition="flow">Home</a>
+		</div><!-- end header div-->
+		
+		<!-- Below is the main content div of this section / page. it houses all the content i want to present to the user. -->
+		<div data-role="content">	
+			<h2>Frequently Asked Questions (FAQ)</h2>
+			
+			<h4>How do I become a member?</h4>
+			<p>To become a member of the Gesture.com network all you have to do is sign up by clicking the signup for free button at the bottom of the home screen. It is free and it only takes menimal action to do so.</p>
+			
+			<h4>How do you begin the process of creating projects?</h4>
+			<p>Inorder to have the option of creating a project you must be a member and have signed into the application. You will then be redirected to your "User Hub" where you will have to click on the Create a project button at the bottom of the screen and flow the simple steps needed to create a file.</p>
+			
+		</div><!-- end content div -->
+		
+		<!-- blelow is a footer div which contains nothing at the moment-->
 		<div data-role="footer" data-position="fixed">
 		</div><!-- end footer div -->
 </div><!-- end of page -->

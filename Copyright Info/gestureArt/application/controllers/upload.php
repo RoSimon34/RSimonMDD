@@ -1,6 +1,6 @@
 <?php
 class Upload extends CI_Controller {
-
+	//the __contruct function is loading the files_model, database, and url helper
    public function __construct()
    {
       parent::__construct();
@@ -9,6 +9,7 @@ class Upload extends CI_Controller {
       $this->load->database();
       $this->load->helper('url');
    }
+   //the index function is loading the welcome page / view
    public function index()
    {
    		/* $this->load->view('templates/header'); */
@@ -16,7 +17,7 @@ class Upload extends CI_Controller {
 		/* $this->load->view('templates/footer'); */
    }
    
-   
+   //
    public function upload_file() {
    
 	   $status = "";
@@ -72,9 +73,9 @@ class Upload extends CI_Controller {
 	   
    }
    
-   
+   //the project view function is getting all the projects from the files_model and the get_projects function within the files model it is getting an array containing all the files
    public function projectsView() {
-  echo "tesT";
+	   echo "tesT";
 	   $files = $this->files_model->get_projects();
 	   
 	   $data['files'] = array('files' => $files);
@@ -85,7 +86,7 @@ class Upload extends CI_Controller {
 	   
    }
    
-   
+   // the individual project function is getting the id of the selected project and pull the data pertain to that specific file or project and presenting all its data to the user.
    public function individualProject($id) {
    
 	   $files = $this->files_model->get_project($id);
@@ -144,6 +145,7 @@ class Upload extends CI_Controller {
 		}
 	}
 	
+	//update project function is getting the project id and update that information with the database based of the id
 	public function updateProject(){
 	
 		if(!$this->session->userdata('logged_in')){
