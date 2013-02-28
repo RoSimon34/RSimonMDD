@@ -1,0 +1,371 @@
+/* ========================== CSS Reset Section ========================== */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========================== Application Section ========================== */
+
+body {
+	
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	
+	padding: 0;
+	margin: 0;
+	background: #e1e4e8;
+}
+
+/*
+.main {
+	
+	margin: 0 auto;
+	width: 960px;
+}
+
+header {
+	
+	margin: 0 auto;
+	width: 960px;
+	background-color: #fff;
+	padding-top: 0;
+}
+
+.header_content {
+	
+	width: 960px;
+	margin: 0 auto;
+}
+*/
+
+
+
+/*---------------- List Page -----------------*/
+.main {
+	
+	margin-top: 5px;
+}
+
+.main li {
+	
+	height: 130px;
+}
+
+.vote_section {
+	
+	margin-top: 30px;
+	border-top: thin solid #dddddc;
+	position: relative;
+}
+
+.vote_section h2 {
+	
+	width: 60px;
+	height: 20px;
+	font-family: Helvetica, serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #7e8288;
+	padding-top: 14px;
+	padding-left: 30px;
+	border-right: thin solid #dddddc;
+}
+
+.vote_section img {
+	
+	position: absolute;
+	top: 14px;
+	left: 5px;
+	
+}
+
+/*
+#list{
+	
+	margin-top: 45px;
+}
+*/
+
+/*---------------- Detail Page -----------------*/
+
+/*
+#main_detailP {
+	
+	background: #fff;
+	width: 960px;
+}
+
+
+#main_detailP h1 {
+	
+	font-family: Helvetica, serif;
+	font-weight: bold;
+	color: #000;
+	margin-top: 20px;
+}
+
+#main_detailP p {
+	
+	font-family: Helvetica, serif;
+	font-size: 12px;
+	color: #000;
+	margin-top: 20px;
+	line-height: 16px;
+}
+
+#main_detailP h3 {
+	
+	font-family: Helvetica, serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin-top: 20px;
+	border-top: thin solid #000;
+	padding-top: 20px;
+}
+*/
+
+
+/*------------------- Welcome Page ----------------*/
+
+.welcome_Projects {
+	
+	background: #fff;
+	height: 120px;
+	border: thin solid #dddddc;
+	padding-top: 20px;
+	padding-left: 20px; 
+	margin-top: 5px;
+	position: relative;
+}
+
+/*
+.welcome_Projects img {
+	
+	margin
+}
+*/
+
+.welcome_vote_section {
+	
+	padding-top: 10px;
+	/* border-top: thin solid #dddddc; */
+	position: absolute;
+
+}
+
+.welcome_ProContent {
+	
+	position: absolute;
+	left: 130px;
+}
+
+#welcome_footer {
+	
+	position: relative;
+	/* padding: 10px; */
+}
+
+#footerP {
+	
+	/* height: 40px; */
+	width: 30%;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 40px;
+	border-right: thin solid #fff;
+	
+}
+
+#wel_createbtn {
+	margin-left: 600px;
+	position: absolute;
+	top: 20px;
+	left: 40px;
+}
+
+
+/* ========================== Media Query Section  ========================== */
+
+/* Media Query: Smartphones (portrait and landscape)  */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+	
+	/*------------ List Page --------------*/
+	
+	header {
+
+		/* width: 473px; */
+		width:	58em;
+		background-color: #fff;
+		padding-top: 0;
+	}
+	
+	
+	header h1 img {
+	
+		width: 35%;
+	}
+	
+	/*------------ Login Page --------------*/
+	
+	#login_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		padding: 5%;
+		width: 90%;
+	}
+	
+	/*------------ Registration Page --------------*/
+	
+	#register_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		padding: 5%;
+		width: 90%;
+		
+	}
+	
+	/*------------ Create Project Page --------------*/
+	
+	#createP_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		padding: 5%;
+		width: 90%;
+	}
+	
+	/*------------ Detail Page --------------*/
+	
+	/*
+#main_detailP {
+	
+		background: #fff;
+		width: 362px;
+		height: 100%;
+	}
+	
+	#main_detailP img {
+	
+		width: 100%;
+	}
+*/
+	
+		
+}
+
+
+
+/* Media Query: iPads (portrait and landscape)  */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+
+	/* Your styles go here... */	
+	
+	/*------------ Header Section --------------*/
+	
+	header {
+
+		/* width: 473px; */
+		width:	100%;
+		background-color: #fff;
+		padding-top: 0;
+	}
+	
+	
+	header h1 img {
+	
+		width: 100%;
+	}
+	
+	/*------------ Login Page --------------*/
+	
+	#login_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+	}
+	
+	/*------------ Registration Page --------------*/
+	
+	#register_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+		
+	}
+	
+	/*------------ Create Project Page --------------*/
+	
+	#createP_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+	}
+	
+}
+
+
+
+
+
+

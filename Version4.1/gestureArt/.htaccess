@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|cors|img|server|system|test|images|files|gallery|assets|css|themes|js|robots\.txt)
+RewriteRule ^(.*)$ /gestureArt/index.php/$1 [L]
