@@ -1,0 +1,881 @@
+/* ========================== CSS Reset Section ========================== */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ======================================================= Application Section ============================================= */
+
+body {
+	
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	
+	padding: 0;
+	margin: 0;
+	background: #e1e4e8;
+}
+
+/*
+.main {
+	
+	margin: 0 auto;
+	width: 960px;
+}
+
+header {
+	
+	margin: 0 auto;
+	width: 960px;
+	background-color: #fff;
+	padding-top: 0;
+}
+
+.header_content {
+	
+	width: 960px;
+	margin: 0 auto;
+}
+*/
+
+
+
+/*---------------- List Page -----------------*/
+.main {
+	
+	margin-top: 5px;
+}
+
+.main li {
+	
+	height: 130px;
+}
+
+.vote_section {
+	
+	margin-top: 30px;
+	border-top: thin solid #dddddc;
+	position: relative;
+}
+
+.vote_section h2 {
+	
+	width: 60px;
+	height: 20px;
+	font-family: Helvetica, serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #7e8288;
+	padding-top: 14px;
+	padding-left: 30px;
+	border-right: thin solid #dddddc;
+}
+
+.vote_section img {
+	
+	position: absolute;
+	top: 14px;
+	left: 5px;
+	
+}
+
+/*
+#list{
+	
+	margin-top: 45px;
+}
+*/
+
+/*---------------- Detail Page -----------------*/
+
+#detail_content {
+	
+	background: #fff;
+	width: 960px;
+}
+
+#detail_content h1 {
+	
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+#detail_content h2 {
+	
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	border-top: thin solid #dddddc;
+}
+
+#detail_content p {
+	
+	font-size: 14px;
+	margin-bottom: 15px;
+	line-height: 1.4em;
+}
+
+
+
+
+
+
+/*------------------- Welcome Page ----------------*/
+
+.welcome_Projects {
+	
+	background: #fff;
+	height: 120px;
+	border: thin solid #dddddc;
+	padding-top: 20px;
+	padding-left: 20px; 
+	margin-top: 5px;
+	position: relative;
+}
+
+
+.welcome_vote_section {
+	
+	padding-top: 10px;
+	/* border-top: thin solid #dddddc; */
+	position: absolute;
+
+}
+
+.welcome_ProContent {
+	
+	position: absolute;
+	left: 140px;
+	top: 19px;
+}
+
+.welcome_ProContent h2 {
+	
+	margin-bottom: 17px;
+}
+
+.welcome_ProContent p {
+	
+	margin-bottom: 10px;
+}
+
+#welcome_footer {
+	
+	position: relative;
+	/* padding: 10px; */
+}
+
+#footerP {
+	
+	/* height: 40px; */
+	width: 30%;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 40px;
+	border-right: thin solid #fff;
+	
+}
+
+#wel_createbtn {
+	margin-left: 600px;
+	position: absolute;
+	top: 20px;
+	left: 40px;
+}
+
+.project_image {
+	
+	height: 90%;
+	width: 7%;
+	
+}
+
+/*----------------- Terms & Policy ------------------*/
+
+#terms_content {
+	
+	background: #fff;
+	width: 960px;
+}
+
+#terms_content h2 {
+	
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#terms_content h3 {
+	
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#terms_content p {
+	
+	font-size: 16px;
+	line-height: 1.4em;
+}
+
+#terms_content ul li {
+	
+	font-size: 16px;
+	line-height: 1.4em;
+}
+
+#terms_content ol li {
+	
+	font-size: 16px;
+	line-height: 1.4em;
+}
+
+/*----------------- FAQ Questions --------------------*/
+
+#faq_content {
+	
+	width: 960px;
+	background: #fff;
+}
+
+#faq_content h2 {
+	
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+#faq_content h4 {
+	
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+#faq_content p {
+	
+	font-size: 16px;
+	line-height: 1.4em;
+	width: 800px;
+	
+
+}
+
+/*---------------- Contact Information --------------------*/
+
+#contact_content {
+	
+	background: #fff;
+	width: 960px;
+}
+
+#contact_content h2 {
+	
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+#contact_content h4 {
+	
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+#contact_content p {
+	
+	font-size: 16px;
+	line-height: 1.4em;
+	width: 800px;
+	margin-top: 5px;
+	
+
+}
+
+/*------------------- Copyright Information ---------------*/
+	
+#coprright_content {
+	
+	background: #fff;
+	width: 960px;
+}
+
+#coprright_content h2 {
+	
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+#coprright_content h4 {
+	
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+#coprright_content p {
+	
+	font-size: 16px;
+	line-height: 1.4em;
+	width: 800px;
+	margin-top: 5px;
+	
+
+}
+
+
+/*------------ Comment view -------------*/
+
+	
+	.project_comments {
+		
+		background: #fff;
+		padding: 5%;
+		height: 40%;
+	}
+	
+	.project_comments .commenter_name {
+		
+		margin-top: 3%;
+		margin-bottom: 1%;
+	}
+	
+	.project_comments .commenter_message {
+		
+		border-bottom: thin solid #dddddc;
+		padding-bottom: 1%;
+		line-height: 1.4em;
+		
+	}
+	
+	#comment_form {
+		
+		padding: 1%;
+		/*
+width: 90%;
+		height: 40%;
+*/
+	}
+
+
+/* ======================================================== iPhone Media Query Section  ===================================================== */
+
+/* Media Query: Smartphones (portrait and landscape)  */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+	
+	/*------------ List Page --------------*/
+	
+	header {
+
+		/* width: 473px; */
+		width:	58em;
+		background-color: #fff;
+		padding-top: 0;
+	}
+	
+	
+	header h1 img {
+	
+		width: 35%;
+	}
+	
+	/*------------ Login Page --------------*/
+	
+	#login_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		padding: 5%;
+		width: 90%;
+	}
+	
+	/*------------ Registration Page --------------*/
+	
+	#register_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		padding: 5%;
+		width: 90%;
+		
+	}
+	
+	
+	
+	/*------------ Create Project Page --------------*/
+	
+	#createP_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		padding: 5%;
+		width: 90%;
+	}
+	
+	/*----------- Thank You Page -----------*/
+	
+	#thank_login {
+	
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+		
+	}
+	
+	#thank_login h2 {
+		
+		font-size: 1.5em;;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	
+	}
+	
+	/*------------ Detail Page --------------*/
+	
+	#detail_content {
+		
+		width: 290px;
+	}
+		
+	
+	#detail_content h1 {
+	
+		font-size: 2em;
+		font-weight: bold;
+		margin-bottom: .5em;
+		margin-top: .5em;
+	
+	}
+	
+	.detail_image {
+		
+		width: 99%;
+	}
+	
+	#detail_content h2 {
+		
+		border-top: thin solid #dddddc;
+		padding-top: 1em;
+		font-size: 1em;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	
+	#detail_content p {
+		
+		font-size: 1em;
+		line-height: 1.4em;
+		margin-bottom: 1em;
+	}
+	
+
+	/*------------ Welcome view -------------*/
+	
+	.project_image {
+	
+		height: 80%;
+		width: 30%;
+	
+	}	
+	
+	
+	/*------------ Comment view -------------*/
+
+	
+	.project_comments {
+		
+		background: #fff;
+		padding: 5%;
+		height: 40%;
+	}
+	
+	.project_comments .commenter_name {
+		
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+	
+	.project_comments .commenter_message {
+		
+		border-bottom: thin solid #dddddc;
+		padding-bottom: 5%;
+		line-height: 1.4em;
+		
+	}
+	
+	#comment_form {
+		
+		padding: 5%;
+		width: 90%;
+		height: 40%;
+	}
+	
+	/*----------------- Terms & Policy ------------------*/
+
+	#terms_content {
+		
+		background: #fff;
+		width: 290px;
+		padding: 5%;
+	}
+	
+	#terms_content h2 {
+		
+		font-size: 1.5em;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	
+	#terms_content h3 {
+		
+		font-size: 1em;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	
+	#terms_content p {
+		
+		font-size: .9em;
+		line-height: 1.4em;
+	}
+	
+	#terms_content ul li {
+		
+		font-size: .9em;
+		line-height: 1.4em;
+	}
+	
+	#terms_content ol li {
+		
+		font-size: .9em;
+		line-height: 1.4em;
+	}
+	
+	/*----------------- FAQ Questions --------------------*/
+
+	#faq_content {
+		
+		width: 290px;
+		background: #fff;
+	}
+	
+	#faq_content h2 {
+		
+		font-size: 1.5em;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	
+	}
+	
+	#faq_content h4 {
+		
+		font-size: 1em;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+		width: 290px;
+	
+	}
+	
+	#faq_content p {
+		
+		font-size: .9em;
+		line-height: 1.4em;
+		width: 290px;
+		
+	
+	}
+	
+	/*---------------- Contact Information --------------------*/
+
+	#contact_content {
+		
+		background: #fff;
+		width: 290px;
+	}
+	
+	#contact_content h2 {
+		
+		font-size: 1.5em;;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	
+	}
+	
+	#contact_content h4 {
+		
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	
+	}
+	
+	#contact_content p {
+		
+		font-size: 16px;
+		line-height: 1.4em;
+		width: 280px;
+		margin-bottom: 5%;
+		margin-top: 5%;
+		
+	
+	}
+	
+	/*------------------- Copyright Information ---------------*/
+		
+	#coprright_content {
+		
+		background: #fff;
+		width: 320px;
+		height: 100%;
+	}
+	
+	#coprright_content h2 {
+		
+		font-size: 1.5em;;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	
+	}
+	
+	#coprright_content h4 {
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	
+	}
+	
+	#coprright_content p {
+		
+		font-size: 16px;
+		line-height: 1.4em;
+		width: 280px;
+		margin-bottom: 5%;
+		margin-top: 5%;		
+	
+	}
+
+	
+		
+}
+
+
+
+/* ============================================= Media Query: iPads (portrait and landscape) ========================================== */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+
+	/* Your styles go here... */	
+	
+	/*------------ Header Section --------------*/
+	
+	header {
+
+		/* width: 473px; */
+		width:	100%;
+		background-color: #fff;
+		padding-top: 0;
+	}
+	
+	
+	header h1 img {
+	
+		width: 100%;
+	}
+	
+	/*------------ Login Page --------------*/
+	
+	#login_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+	}
+	
+	/*------------ Registration Page --------------*/
+	
+	#register_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+		
+	}
+	
+	/*------------ Create Project Page --------------*/
+	
+	#createP_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+	}
+	
+	/*------------ Welcome view -------------*/
+	
+	.project_image {
+	
+		height: 80%;
+		width: 15%;
+	
+	}
+	
+	/*----------- Update Project -----------*/
+	
+	#updateP_content {
+		
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+	}
+	
+	/*----------- Thank You Page -----------*/
+	
+	#thank_login {
+	
+		background: #fff;
+		margin: 0 auto;
+		margin-top: 2%;
+		padding: 5%;
+		width: 70%;
+		
+	}
+	
+	#thank_login h2 {
+		
+		font-size: 1.5em;;
+		font-weight: bold;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	
+	}
+	
+	/*------------ Detail Page --------------*/
+	
+	#detail_content {
+		
+		width: 85%;
+		height: 100%;
+		margin: 0 auto;
+		margin-top: 5%;
+		
+	}
+	
+	
+	#detail_content h1 {
+	
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	}
+	
+	#detail_content h2 {
+		
+		border-top: thin solid #dddddc;
+		padding-top: 1em;
+		font-size: 1em;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	
+	#detail_content p {
+		
+		font-size: 1em;
+		line-height: 1.4em;
+		margin-bottom: 1em;
+	}
+	
+	
+	
+}
+
+
+
+
+
+
